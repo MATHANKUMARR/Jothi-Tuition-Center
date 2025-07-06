@@ -158,10 +158,10 @@ function debounce(func, wait) {
 
 // Set dynamic copyright year
 function setDynamicYear() {
-    const year = new Date().getFullYear();
-    const footerText = document.querySelector('.footer-bottom p');
-    if (footerText) {
-        footerText.innerHTML = `&copy; ${year} Jothi Tuition Center. All rights reserved.`;
+    const year = new Date().getUTCFullYear();
+    const footerYear = document.getElementById("dynamic-year");
+    if (footerYear) {
+        footerYear.innerText = year;
     }
 }
 
