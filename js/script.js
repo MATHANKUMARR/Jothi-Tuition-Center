@@ -159,10 +159,7 @@ function debounce(func, wait) {
 // Set dynamic copyright year
 function setDynamicYear() {
     const year = new Date().getUTCFullYear();
-    document.getElementById("dynamic-years").innerText = year;
-    // if (footerYear) {
-        // footerYear.innerText = year;
-    // }
+    document.getElementById("dynamic-year").innerText = year;
 }
 
 // Call the function when DOM is loaded
