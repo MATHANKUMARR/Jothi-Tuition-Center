@@ -156,6 +156,18 @@ function debounce(func, wait) {
     };
 }
 
+// Set dynamic copyright year
+function setDynamicYear() {
+    const year = new Date().getFullYear();
+    const footerText = document.querySelector('.footer-bottom p');
+    if (footerText) {
+        footerText.innerHTML = `&copy; ${year} Jothi Tuition Center. All rights reserved.`;
+    }
+}
+
+// Call the function when DOM is loaded
+setDynamicYear();
+
 // Add CSS for active nav link
 const style = document.createElement('style');
 style.textContent = `
