@@ -160,9 +160,9 @@ function debounce(func, wait) {
 function setDynamicYear() {
     const year = new Date().getUTCFullYear();
     const footerYear = document.getElementById("dynamic-years");
-    if (footerYear) {
+    // if (footerYear) {
         footerYear.innerText = year;
-    }
+    // }
 }
 
 // Call the function when DOM is loaded
